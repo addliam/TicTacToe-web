@@ -1,0 +1,93 @@
+:root{
+ --color-black:#121212;
+ --color-red:#F05454;
+ --color-blue: #30475E;
+ --color-gray:#D9D9D9;
+ --color-gray-light:#F5F5F5;
+ --color-active: #75F94C;
+
+}
+body{
+    font-family: 'Roboto','Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    width: 22.5rem;
+    height: 40rem;
+}
+header{
+    margin-top: 5rem;
+    padding: 1rem;
+}
+header>h2{
+    font-family: 'Roboto Medium';
+    font-size: 2rem;
+    text-align: center;
+}
+.interactive{
+    width: 80%;
+    height: auto;
+    margin: auto ;
+}
+.player{
+    display: flex;
+    padding: 0 0.5rem 0 0.5rem;
+    gap: .6rem;
+    width: 8rem;
+    height: 2.5rem;
+    align-items: center;
+    align-content: center;
+}
+.player img{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+}
+.player span{
+    color: var(--color-gray);
+}
+#player1{
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
+#player2{
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 13.125rem;
+    height: 13.125rem;
+    margin: auto;
+}
+.box{
+    cursor: pointer;
+    display: flex;
+    width: 4.375rem;
+    height: 4.375rem;
+    border:1px solid rgb(184, 184, 184);
+}
+svg{
+    margin: auto;
+}
+.message_container{
+    margin: 1.5rem auto;
+}
+#message{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #121212;
+}
